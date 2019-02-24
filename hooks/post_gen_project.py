@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 
 import os
+import shutil
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
 def remove_dir(filepath):
-    os.rmdir(os.path.join(PROJECT_DIRECTORY, filepath))
+    shutil.rmtree(os.path.join(PROJECT_DIRECTORY, filepath))
 
 if __name__ == '__main__':
 
